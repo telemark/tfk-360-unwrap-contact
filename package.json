@@ -1,0 +1,39 @@
+{
+  "name": "tfk-360-unwrap-contact",
+  "version": "1.0.0",
+  "description": "Unwraps GetPrivatePersonsResult from Public 360",
+  "license": "MIT",
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "scripts": {
+    "test": "standard && tap --reporter=spec test/*.js",
+    "coverage": "tap test/*.js --coverage",
+    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
+    "setup": "npm install && node setup.js"
+  },
+  "keywords": [
+    "Tfk",
+    "Telemark fylkeskommune",
+    "Public 360",
+    "Unwrap"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/telemark/tfk-360-unwrap-contact.git"
+  },
+  "bugs": {
+    "url": "http://github.com/telemark/tfk-360-unwrap-contact/issues"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.6",
+    "standard": "^5.4.1",
+    "tap": "^5.1.1"
+  }
+}

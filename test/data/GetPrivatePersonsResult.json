@@ -1,0 +1,25 @@
+{
+  "GetPrivatePersonsResult": {
+    "Successful": true,
+    "PrivatePersons": {
+      "PrivatePersonBase": [
+        {
+          "Email": "xxx",
+          "FirstName": "xxx",
+          "LastName": "xxx",
+          "PersonalIdNumber": "xxx",
+          "PhoneNumber": "xxx",
+          "PrivateAddress": {
+            "Area": "",
+            "Country": "NOR",
+            "County": "",
+            "State": "",
+            "StreetAddress": "<HEMMELIG ADRESSE>",
+            "ZipCode": "",
+            "ZipPlace": ""
+          }
+        }
+      ]
+    }
+  }
+}
