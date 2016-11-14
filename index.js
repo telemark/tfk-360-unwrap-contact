@@ -6,8 +6,8 @@ function unwrapContact (contact) {
   }
   var person = false
 
-  if (contact.GetPrivatePersonsResult && contact.GetPrivatePersonsResult.PrivatePersons) {
-    if (contact.GetPrivatePersonsResult.PrivatePersons.PrivatePersonBase) {
+  if (contact.GetPrivatePersonsResult) {
+    if (contact.GetPrivatePersonsResult.PrivatePersons && contact.GetPrivatePersonsResult.PrivatePersons.PrivatePersonBase) {
       if (contact.GetPrivatePersonsResult.PrivatePersons.PrivatePersonBase.length === 1) {
         person = contact.GetPrivatePersonsResult.PrivatePersons.PrivatePersonBase[0]
       } else {

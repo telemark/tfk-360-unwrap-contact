@@ -37,6 +37,14 @@ tap.test('It returns false if no person found', function (test) {
   test.done()
 })
 
+tap.test('It returns false if no person found', function (test) {
+  var contact = require('./data/GetPrivatePersonsResultNoneFoundNull.json')
+  var expected = false
+  var result = unwrapContact(contact)
+  tap.equal(JSON.stringify(result), JSON.stringify(expected), 'Contact returned false OK')
+  test.done()
+})
+
 tap.test('It returns expected result', function (test) {
   var contact = require('./data/GetPrivatePersonsResult.json')
   var expected = require('./data/unwrappedContact.json')
