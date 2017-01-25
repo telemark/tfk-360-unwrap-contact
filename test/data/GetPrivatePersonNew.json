@@ -1,0 +1,41 @@
+{
+  "GetPrivatePersonsResult": {
+    "Successful": true,
+    "PrivatePersons": {
+      "PrivatePersonResult": [
+        {
+          "Active": true,
+          "Categories": null,
+          "CreatedDate": "2015-08-25T13:46:46.000Z",
+          "CustomNo1": "",
+          "CustomNo2": "",
+          "CustomNo3": "",
+          "ExternalID": "",
+          "FirstName": "Halvard",
+          "LastName": "Hårtap",
+          "ModifiedDate": "2017-01-25T10:41:58.000Z",
+          "PersonalIdNumber": "29000000000",
+          "PrivateAddress": {
+            "Area": "TELEMARK",
+            "Country": "NOR",
+            "County": "",
+            "State": "",
+            "StreetAddress": "<HEMMELIG ADRESSE>",
+            "ZipCode": "3677",
+            "ZipPlace": "NOTODDEN"
+          },
+          "WorkAddress": {
+            "Area": "",
+            "Country": "NOR",
+            "County": "",
+            "State": "",
+            "StreetAddress": "",
+            "ZipCode": "",
+            "ZipPlace": ""
+          },
+          "Recno": 217453
+        }
+      ]
+    }
+  }
+}
