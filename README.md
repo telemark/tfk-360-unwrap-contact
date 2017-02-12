@@ -4,6 +4,8 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 # tfk-360-unwrap-contact
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/tfk-360-unwrap-contact.svg)](https://greenkeeper.io/)
+
 Module for unwrapping a contact from Public360's GetPrivatePersonsResult
 
 ## Installation
