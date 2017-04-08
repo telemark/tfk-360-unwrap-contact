@@ -1,6 +1,6 @@
 {
   "name": "tfk-360-unwrap-contact",
-  "version": "2.0.9",
+  "version": "2.0.10",
   "description": "Unwraps GetPrivatePersonsResult from Public 360",
   "license": "MIT",
   "author": {
