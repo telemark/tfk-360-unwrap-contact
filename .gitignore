@@ -1,5 +1,6 @@
 # IDE
 .idea
+.vs
 .vscode
 
 # OS X
@@ -39,3 +40,9 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+
+# Env
+.env
+
+# Lock
+package-lock.json
