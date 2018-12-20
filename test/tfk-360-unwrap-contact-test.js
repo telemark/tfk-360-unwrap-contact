@@ -1,5 +1,3 @@
-'use strict'
-
 var tap = require('tap')
 var unwrapContact = require('../index')
 

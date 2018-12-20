@@ -1,12 +1,10 @@
-'use strict'
-
 const resolve = (path, obj) => {
   return path.split('.').reduce((prev, curr) => {
     return prev ? prev[curr] : undefined
   }, obj)
 }
 
-module.exports = (contact) => {
+module.exports = contact => {
   if (!contact) {
     throw new Error('Missing required input: contact object')
   } else if (!contact.GetPrivatePersonsResult) {
