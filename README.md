@@ -2,9 +2,8 @@
 [![Coverage Status](https://coveralls.io/repos/telemark/tfk-360-unwrap-contact/badge.svg?branch=master&service=github)](https://coveralls.io/github/telemark/tfk-360-unwrap-contact?branch=master)
 [![Code Climate](https://codeclimate.com/github/telemark/tfk-360-unwrap-contact/badges/gpa.svg)](https://codeclimate.com/github/telemark/tfk-360-unwrap-contact)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-# tfk-360-unwrap-contact
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/tfk-360-unwrap-contact.svg)](https://greenkeeper.io/)
+# tfk-360-unwrap-contact
 
 Module for unwrapping a contact from Public360's GetPrivatePersonsResult
 
@@ -22,10 +21,10 @@ From GitHub
 $ git clone git@github.com:telemark/tfk-360-unwrap-contact.git
 ```
 
-cd into directory and run setup
+cd into directory and install dependencies
 
 ```sh
-$ npm run setup
+$ npm install
 ```
 
 ## Usage
@@ -33,10 +32,8 @@ $ npm run setup
 Pass a result from GetPrivatePersonsResult
 
 ```javascript
-'use strict'
-
-var unwrapContact = require('tfk-360-unwrap-contact')
-var result = {
+const unwrapContact = require('tfk-360-unwrap-contact')
+const result = {
   GetPrivatePersonsResult: {
     Successful: true,
     PrivatePersons: {
@@ -62,15 +59,15 @@ var result = {
     }
   }
 }
-var contact = unwrapContact(result)
+
+const contact = unwrapContact(result)
  
 console.log(contact)
-
 ```
 
 returns
 
-```javascript
+```JavaScript
 {
   Email: 'xxx',
   FirstName: 'xxx',
@@ -90,4 +87,5 @@ returns
 ```
 
 ##License
+
 [MIT](LICENSE)
