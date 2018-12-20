@@ -7,7 +7,7 @@ tap.throws(
   function () {
     unwrapContact()
   },
-  {message: 'Missing required input: contact object'},
+  { message: 'Missing required input: contact object' },
   'Throws if contact object not supplied'
 )
 
@@ -16,7 +16,7 @@ tap.throws(
     var multiple = require('./data/GetPrivatePersonsResultMultiple.json')
     unwrapContact(multiple)
   },
-  {message: 'More than 1 person in contact object'},
+  { message: 'More than 1 person in contact object' },
   'Throws if contact object contains more than 1 person'
 )
 
@@ -25,7 +25,7 @@ tap.throws(
     var malformed = require('./data/unwrappedContact.json')
     unwrapContact(malformed)
   },
-  {message: 'Malformed contact object'},
+  { message: 'Malformed contact object' },
   'Throws if contact object is malformed'
 )
 
