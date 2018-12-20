@@ -10,14 +10,16 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=4.7.2"
+    "node": ">=10.14.2"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/*.js",
     "test-offline": "standard && tap --reporter=spec test/*.js",
     "coverage": "tap test/*.js --coverage",
     "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
-    "setup": "npm install"
+    "setup": "npm install",
+    "standard-fix": "standard --fix",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "keywords": [
     "Tfk",
@@ -27,10 +29,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/telemark/tfk-360-unwrap-contact.git"
+    "url": "git+https://github.com/telemark/tfk-360-unwrap-contact.git"
   },
   "bugs": {
-    "url": "http://github.com/telemark/tfk-360-unwrap-contact/issues"
+    "url": "https://github.com/telemark/tfk-360-unwrap-contact/issues"
   },
   "devDependencies": {
     "standard": "12.0.1",
