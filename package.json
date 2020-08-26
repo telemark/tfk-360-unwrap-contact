@@ -36,6 +36,6 @@
   "devDependencies": {
     "standard": "14.3.3",
     "coveralls": "3.0.9",
-    "tap": "14.10.6"
+    "tap": "14.10.8"
   }
 }
