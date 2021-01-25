@@ -7,10 +7,10 @@ const resolve = (path, obj) => {
 module.exports = contact => {
   if (!contact) {
     throw new Error('Missing required input: contact object')
-  } else if (!contact.GetPrivatePersonsResult) {
+  } else if (!contact.GetPrivatePersonsResult && !contact.PrivatePersons) {
     throw new Error('Malformed contact object')
   }
-  const person = resolve('GetPrivatePersonsResult.PrivatePersons.PrivatePersonBase', contact) || resolve('GetPrivatePersonsResult.PrivatePersons.PrivatePersonResult', contact)
+  const person = resolve('PrivatePersons', contact) || resolve('GetPrivatePersonsResult.PrivatePersons.PrivatePersonBase', contact) || resolve('GetPrivatePersonsResult.PrivatePersons.PrivatePersonResult', contact)
   if (!person) {
     return false
   } else if (person.length === 1) {
