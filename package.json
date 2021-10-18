@@ -34,7 +34,7 @@
     "url": "https://github.com/telemark/tfk-360-unwrap-contact/issues"
   },
   "devDependencies": {
-    "standard": "16.0.3",
+    "standard": "16.0.4",
     "coveralls": "3.1.1",
     "tap": "15.0.9"
   }
